@@ -1,0 +1,5 @@
+{"personas":[{ "id":"100", "nombre":"Pedro Paramo", "edad":"18", "curso":"1", "modulo":"Programacion" },
+{ "id":"200", "nombre":"Gilberto Perez", "edad":"19", "curso":"1", "modulo":"Programacion" }, 
+{ "id":"120", "nombre":"Angel Gonzalez", "edad":"18", "curso":"1", "modulo":"Bases de datos" }, 
+{ "id":"140", "nombre":"Roberto Mendez", "edad":"17", "curso":"1", "modulo":"Bases de datos" }, 
+{ "id":"130", "nombre":"Angel Gonzalez", "edad":"18", "curso":"2", "modulo":"Servicios en red" }]}
