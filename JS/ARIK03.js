@@ -13,15 +13,16 @@ $(document).ready(function(){
 
     var myArray = [];
 
-    for (i = 0; i < $(".dos").length; i++) {
-      if ($(".dos").eq(i).css("color") == "rgb(255, 0, 0)"){
-        num = $(".dos").eq(i).html();
+    $('.dos').each(function(){
+      if ($(this).css("color") == "rgb(255, 0, 0)"){
+        num = $(this).html();
         myArray.push(num);
       }
-    }
+
 
     result = eval(myArray.join("+"));
     $('#resul').html(result);
 
   });
+});
 });
