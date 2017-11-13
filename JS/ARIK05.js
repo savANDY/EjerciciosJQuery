@@ -2,6 +2,8 @@ $(document).ready(function(){
 
 
   $('img').on("mousemove", function(e) {
+    var $div = $('<div />').appendTo('body');
+    $div.attr('id', 'coord');
             var offset = $(this).offset();
             var X = (e.pageX + 20);
             var Y = (e.pageY + 20);
