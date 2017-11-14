@@ -2,38 +2,39 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Ejemplo de almacenamiento local con HTML5</title>
-<style type="text/css">
-span#mensajes {	color: blue;}
-</style>
-<script src="JS/jquery-3.2.1.min.js" type="text/javascript"></script>
+<link href="css/ARIK09.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="js/ARIK09.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+   
  
+</script>   
 </head>
 <body >
-<h1>EJEMPLO DE ALMACENAMIENTO LOCAL CON HTML5</h1>
+<h1>JOKALARIEN SAILKAPENA</h1>
 
-<span id="mensajes"></span><br/><br/>
-AREA DE ALMACENAMIENTO: 
-<select id="tipostorage">
-<option value="local" tipo="localStorage">LOCAL</option>
-<option value="sesion" tipo="sessionStorage">SESION</option>
-</select><br/>
-CLAVE: <input type="text" id="clave"/><br/>
-VALOR: <input type="text" id="valor"/><br/><br/>
-<button id="guardar">GUARDAR</button> 
-<button id="eliminar">ELIMINAR</button> 
-<button id="visualiza">VISUALIZAR</button> 
-
-<br/><br/>
-<table>
-<tr>
-<td>
-CLAVES Y VALORES :<br/>
-<textarea rows="10" cols="50" id="almacenamientoLocal"></textarea>
-</td>
-
-</tr>
-</table>
-
+<section id="central">
+<aside class="vertical-menu">
+  <a href="#" class="active">AUKERAK</a>
+  <a href="#" id="jugadorNuevo">Añadir jugador </a>
+  <a href="#"id="masGoles">Sumar goles</a>
+  <a href="#" id="quitarjugador">Borrar jugador</a>
+  <a href="#"id="buscarJugador">Buscar</a>
+  <a href="#" id="sacarTodos">Ver todos</a>
+</aside>
+    <div class="dcha">
+        <div id="banaka">
+            <label for input>JOKALARIA</label><input type="text" id="jokalaribat"><br>
+           <select id="jugadores"></select>
+            <label for input>GOLAK</label><input type="text" id="golak">
+            <input type="button" value="aceptar" id="guardar">
+        </div>
+   
+    <div id="sacart">
+        <ul></ul>
+        </div>
+</section>
 
 </body>
 </html>

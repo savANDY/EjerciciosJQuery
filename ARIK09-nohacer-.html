@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Ejemplo de almacenamiento local con HTML5</title>
+<style type="text/css">
+span#mensajes {	color: blue;}
+</style>
+<script src="JS/jquery-3.2.1.min.js" type="text/javascript"></script>
+ <script src="JS/ARIK09.js" type="text/javascript"></script>
+</head>
+<body >
+<h1>EJEMPLO DE ALMACENAMIENTO LOCAL CON HTML5</h1>
+
+<span id="mensajes"></span><br/><br/>
+AREA DE ALMACENAMIENTO:
+<select id="tipostorage">
+<option value="local" tipo="localStorage">LOCAL</option>
+<option value="sesion" tipo="sessionStorage">SESION</option>
+</select><br/>
+CLAVE: <input type="text" id="clave"/><br/>
+VALOR: <input type="text" id="valor"/><br/><br/>
+<button id="guardar">GUARDAR</button>
+<button id="eliminar">ELIMINAR</button>
+<button id="visualiza">VISUALIZAR</button>
+
+<br/><br/>
+<table>
+<tr>
+<td>
+CLAVES Y VALORES :<br/>
+<textarea rows="10" cols="50" id="almacenamientoLocal"></textarea>
+</td>
+
+</tr>
+</table>
+
+
+</body>
+</html>
