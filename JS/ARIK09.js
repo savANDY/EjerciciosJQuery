@@ -85,10 +85,12 @@ $(document).ready(function(){
 
   $('#sacarTodos').click(function(){
       esconder();
+      $('#sacart ul').html("");
       $('#sacart').css("display","block");
 
       for (i=0; i<=localStorage.length-1; i++)  {
         clave = localStorage.key(i);
+
         $('#sacart ul').append($('<li>').append(clave + " " + localStorage.getItem(clave)));
       }
   });
