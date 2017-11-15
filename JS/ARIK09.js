@@ -1,17 +1,5 @@
 $(document).ready(function(){
   esconder();
-  $('#guardar').click(function(){
-    clave = $('#clave').val();
-    valor = $('#valor').val();
-
-    tipoStorage = $('#tipostorage').val();
-
-    if (tipoStorage === "local"){
-      localStorage.setItem(clave, valor);
-    } else if (tipoStorage === "sesion"){
-      sessionStorage.setItem(clave, valor);
-    }
-  });
 
   function esconder() {
     $('#sacart').css("display","none");
@@ -88,13 +76,17 @@ $(document).ready(function(){
 
   $('#sacarTodos').click(function(){
       esconder();
-      $('#sacart ul').html("");
+      $('#sacart').html("");
       $('#sacart').css("display","block");
+
+      $('#sacart').append($('<table id="todos">').append($('<tr>').append($("<th>").text("Jugador"))));
+      $('#sacart table tr').append($("<th>").append("Goles"));
+
 
       for (i=0; i<=localStorage.length-1; i++)  {
         clave = localStorage.key(i);
 
-        $('#sacart ul').append($('<li>').append(clave + " " + localStorage.getItem(clave)));
+        $('#sacart table').append($("<tr id='jug'>").append($("<td>" + clave + "</td><td>" + localStorage.getItem(clave) + "</td>")));
       }
   });
 

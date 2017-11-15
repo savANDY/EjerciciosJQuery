@@ -2,14 +2,23 @@
     width: 200px; /* Set a width if you like */
     display:table-cell;
   }
-  .dcha{ display: table-cell;}
+  .dcha{
+    display: table-cell;
+    padding-left: 30px;
+  }
+  #jokalariLabel {
+    width: 100px;
+  }
+  #golakLabel {
+    width: 100px;
+  }
 
 #central{
-    background-color: #ccc; 
+    background-color: #ccc;
     display: table;
     width: 100%;
     }
-    
+
 .dcha #nuevo, .dcha #sumarGol{display:  none;
 }
 .dcha #nuevo label{width:100px;margin:25px;padding:5px}
@@ -30,3 +39,26 @@
 .vertical-menu a.active {
     background-color: #4CAF50; /* Add a green color to the "active/current" link */
     color: white;}
+
+    #todos {
+        margin-right: 50px;
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    #todos td, #todos th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    #todos tr:nth-child(even){background-color: #f2f2f2;}
+
+    #todos tr:hover {background-color: #ddd;}
+
+    #todos th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #4CAF50;
+        color: white;
