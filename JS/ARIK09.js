@@ -43,6 +43,8 @@ $(document).ready(function(){
       $('#jugadores').css("display","inline-block");
       $('#golak').css("display","inline-block");
       $('#golakLabel').css("display","inline-block");
+
+      $("#jugadores").html("");
       for (i=0; i<=localStorage.length-1; i++)  {
         clave = localStorage.key(i);
         var o = new Option(clave, clave);
@@ -57,6 +59,7 @@ $(document).ready(function(){
       esconder();
       $('#banaka').css("display","block");
       $('#jugadores').css("display","inline-block");
+      $("#jugadores").html("");
       for (i=0; i<=localStorage.length-1; i++)  {
         clave = localStorage.key(i);
         var o = new Option(clave, clave);
