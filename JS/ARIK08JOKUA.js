@@ -14,14 +14,28 @@ $(document).ready(function(){
   });
 
   $('#asmatu').click(function(){
+    numintentos= 0;
+    $('#veces').val(numintentos);
     $("#cuadros").html("");
     $('#hitzberria').css("display","none");
     $('#juego').css("display","block");
-    num = 0;
-    for (i = 0; i < palabra.length; i++) {
 
-      $("#cuadros").append( "<div class='cuadritos' id='letra" + num + "'></div>" );
-      num++;
+    for (i = 0; i < palabra.length; i++) {
+      $("#cuadros").append( "<div class='cuadritos' id='letra" + i + "'></div>" );
+    }
+
+    for (i = 0; i < palabra.length; i++) {
+      imageUrl = "IMAGES/animal" + i + ".png";
+      if (!($('#letra' + i).css('background-image') != 'none')){
+        $('#letra' + i).css('background-image', 'url(' + imageUrl + ')');
+      }
+
+      for (j = 0; j < palabra.length; j++) {
+        if (palabra.charAt(j) === palabra.charAt(i)){
+          $('#letra' + j).css('background-image', 'url(' + imageUrl + ')');
+        }
+      }
+
     }
 
   });

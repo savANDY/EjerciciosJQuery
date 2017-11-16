@@ -14,6 +14,9 @@ header li a{color:white; text-decoration:none;
      color:white; padding:20px;text-decoration: none;border: 0px;
  }
  #hitza #formuvalidar input, #juego #formucomprobar input{margin-top: 10px;}
- .cuadritos{display:inline-block; width:75px;  height:75px; 
-     border:2px solid black;  color:black; background-size: cover; 
-    font-size: 50px; font-weight: bolder;  background-color: white; }
+ .cuadritos{display:inline-block; width:75px;  height:75px;
+     border:2px solid black;  color:white; background-size: cover;
+    font-size: 50px; font-weight: bolder;  background-color: red;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
+  }
